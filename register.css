@@ -1,0 +1,136 @@
+/* General Body Styling */
+body {
+  margin: 0; /* Removes default margin */
+  font-family: Arial, sans-serif; /* Sets the font for the entire page */
+  background: url('img/bglogin.jpg') no-repeat center center fixed; /* Sets the background image with no-repeat and fixed position */
+  background-size: cover; /* Ensures the background image covers the entire viewport */
+  height: 100vh; /* Makes the body take the full viewport height */
+  display: flex; /* Enables flexbox layout for centering content */
+  align-items: center; /* Vertically centers the content */
+  justify-content: center; /* Horizontally centers the content */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-position: center; /* Centers the background image */
+}
+
+/* Container for the registration form */
+.register-container {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for the form */
+  padding: 2rem; /* Adds spacing inside the container */
+  border-radius: 10px; /* Rounds the corners of the container */
+  width: 350px; /* Sets a fixed width for the form */
+  height: auto; /* Allows height to adjust based on content */
+  text-align: center; /* Centers text inside the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a raised effect */
+}
+
+/* Styling for the logos inside the form */
+.register-container img {
+  width: 90px; /* Sets the logo width */
+  height: 90px; /* Sets the logo height */
+  margin-bottom: 1px; /* Adds slight spacing below the logos */
+}
+
+/* Heading inside the form */
+.account-form h1 {
+  margin: 0 0 10px; /* Adds spacing below the heading */
+  font-size: 24px; /* Sets the font size */
+  color: #fff; /* White color for the text */
+}
+
+/* Subheadings (labels for input fields) */
+.account-form h5 {
+  margin-bottom: auto; /* Removes bottom margin */
+  text-align: left; /* Aligns text to the left */
+  color: #fff; /* White text color */
+}
+
+/* Paragraph text inside the form */
+.account-form p {
+  margin-bottom: 20px; /* Adds spacing below the paragraph */
+  color: #fff; /* White text color */
+}
+
+/* Links (e.g., Login link) */
+.account-form a {
+  color: #17a2b8; /* Blue-green color for links */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.account-form a:hover {
+  text-decoration: underline; /* Underlines the link on hover */
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 94%; /* Makes input fields span the full width of the container */
+  padding: 10px; /* Adds inner spacing inside input fields */
+  margin-bottom: 1px; /* Adds spacing below input fields */
+  border: 1px solid #575766; /* Adds a border with a gray color */
+  border-radius: 4px; /* Rounds the corners of input fields */
+  background-color: #fff; /* White background for input fields */
+  color: #0b0b0b; /* Black text color */
+}
+
+
+select.form-input {
+  appearance: none; /* Removes default OS styling for dropdown */
+  -webkit-appearance: none; /* For Safari and Chrome */
+  -moz-appearance: none; /* For Firefox */
+  background: white;
+  cursor: pointer;
+  padding-right: 30px; /* Space for dropdown arrow */
+}
+
+/* Add a container with position relative to hold the dropdown */
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-container::after {
+  content: '\25BC'; /* Unicode for dropdown arrow */
+  font-size: 14px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Arrow won't block clicks on the dropdown */
+}
+
+/* Button for creating an account */
+.create-account {
+  width: 100%; /* Full-width button */
+  padding: 10px; /* Adds spacing inside the button */
+  margin-top: 20px;
+  margin-bottom: 15px; /* Adds spacing below the button */
+  border: none; /* Removes border */
+  border-radius: 4px; /* Rounds the button corners */
+  background-color: #28a745; /* Green background color */
+  color: white; /* White text color */
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+  font-size: 16px; /* Sets font size */
+}
+
+.create-account:hover {
+  background-color: #218838; /* Darker green background on hover */
+}
+
+/* Back button styling */
+.back-button {
+  background-color: transparent; /* Transparent background */
+}
+
+.back-button a {
+  color: #fff; /* White color for the link text */
+  text-decoration: none; /* Removes underline from the link */
+}
+
+/* Container for password input and toggle icon */
+.input-container {
+  position: relative; /* Ensures the toggle icon is positioned relative to this container */
+  margin-bottom: 20px; /* Adds spacing below the container */
+}
+

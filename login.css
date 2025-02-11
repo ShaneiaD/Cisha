@@ -1,0 +1,98 @@
+body {
+    margin: 0; /* Removes default margin around the body */
+    font-family: Arial, sans-serif; /* Sets the font style */
+    background: url('img/bulo.jpg') no-repeat center center fixed; /* Set background image (replace with actual path) */
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    height: 100vh; /* Makes the body take the full viewport height */
+    display: flex; /* Enables flexbox layout for centering content */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    background-attachment: fixed; /* Ensures the background image stays fixed during scrolling */
+    background-position: center; /* Centers the background image */
+  }
+  
+  .login-container {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for login box */
+    padding: 2rem; /* Adds padding inside the container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    width: 350px; /* Sets the width of the login box */
+    text-align: center; /* Centers the text inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow around the container */
+  }
+  
+  .login-container img {
+    width: 90px; /* Sets the width of the logo images */
+    height: 90px; /* Sets the height of the logo images */
+    margin-bottom: 5px; /* Adds space below the images */
+  }
+  
+  .login-container h2 {
+    color: #ffffff; /* White color for the heading text */
+    margin-bottom: 1rem; /* Adds space below the heading */
+  }
+  
+  .login-container label {
+    display: block; /* Makes the label a block element to appear above input fields */
+    color: #ffffff; /* Sets the label text color to white */
+    text-align: left; /* Aligns the label text to the left */
+    margin-bottom: 0.5rem; /* Adds space below the label */
+  }
+  
+  .login-container input {
+    width: 100%; /* Makes the input fields span the full width of the container */
+    padding: 0.8rem; /* Adds padding inside the input fields */
+    margin-bottom: 10px; /* Adds space below the input fields */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the input fields */
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+  }
+  
+  .login-container button {
+    width: 100%; /* Makes the button span the full width of the container */
+    padding: 0.8rem; /* Adds padding inside the button */
+    margin-top: 20px; /* Adds space above the button */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+  }
+  
+  /* Styles for the login button */
+  .login-container button {
+    background-color: #28a745; /* Green background color for the button */
+    color: #ffffff; /* White text color */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+    font-size: 1rem; /* Sets the font size of the button text */
+  }
+  
+  .login-container button:hover {
+    background-color: #218838; /* Darker green color on hover */
+  }
+  
+  .login-container p {
+    color: #ffffff; /* Sets the text color of the paragraph to white */
+    margin-top: 1rem; /* Adds space above the paragraph */
+  }
+  
+  .login-container a {
+    color: #17a2b8; /* Light blue color for links */
+    text-decoration: none; /* Removes underline from links */
+  }
+  
+  .login-container a:hover {
+    text-decoration: underline; /* Adds underline when the link is hovered */
+  }
+  
+  .input-container {
+    position: relative; /* Used to position the toggle icon inside the password field */
+  }
+  
+  #toggle-password {
+    position: absolute; /* Positions the icon inside the password field */
+    top: 35%; /* Vertically centers the icon */
+    right: 10px; /* Positions the icon towards the right edge */
+    transform: translateY(-50%); /* Ensures the icon is properly aligned vertically */
+    font-size: 20px; /* Sets the font size of the toggle icon */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+    color: #555; /* Sets the color of the icon */
+  }
+  
